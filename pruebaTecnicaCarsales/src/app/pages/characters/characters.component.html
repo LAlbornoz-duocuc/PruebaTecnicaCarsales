@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container-md my-3">
+    <h2 class="px-2 px-lg-0">{{ episode.name }}</h2>
+
+    <div class="d-flex">
+
+        <div class="flex-grow-1 ms-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, eos quaerat veritatis architecto quasi dicta
+            nihil ducimus molestiae? Ea perspiciatis eos illo quasi soluta velit aspernatur nisi nam minima
+            necessitatibus.
+        </div>
+    </div>
+    <div class="container-characters mt-5">
+        <h2 class="px-2 px-lg-0">Characters</h2>
+        <div class="row g-0 g-md-2">
+            <app-card-characters class=""
+                [characters]="episode.characters"></app-card-characters>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="row">
+<div *ngFor="let character of charactersList" class="col-12 col-md-6 col-xl-3 card-character text-center mx-auto px-3 mb-4">
+    
+    <img src="{{ character.image }}" class="img-thumbnail" alt="...">
+    <ul>
+        <li>
+            Status: {{character.status}}
+        </li>
+
+        <li>
+            Origin: {{character.location.name}}
+        </li>
+    </ul>
+</div>
+</div>
